@@ -1,0 +1,755 @@
+@import url('https://cdnjs.cloudflare.com/font-awesome/6.5.1/css/all.min.css'); 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css');
+
+   /* -----Global / Reset Styles----- */ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #102a43;
+    line-height: 1.5;
+}
+
+a {
+    color: #130b0b;
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+   /*--- Header & Navbar Section ---*/
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 14px 7%;
+    border-bottom: 1px solid #d9e2ec;
+    background-color: white;
+}
+
+.logo {
+    color: #102a43;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.navbar .logo {
+    font-size: 28px;
+}
+
+.logo span {
+    color: #d11392;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #486581;
+}
+
+.nav-links a:hover,
+.nav-links .active,
+.login-link {
+    color: #1677d2;
+    font-weight: bold;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* ---Buttons & General Components--- */  
+.btn {
+    display: inline-block;
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 6px;
+    background: #1677d2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0c5da7;
+}
+
+.btn-small {
+    padding: 8px 13px;
+}
+
+.page-heading {
+    padding: 45px 20px;
+    background: #edf7ff;
+    text-align: center;
+}
+
+.page-heading h1 {
+    font-size: 32px;
+}
+
+.page-heading p,
+.form-message {
+    color: #627d98;
+}
+
+ 
+   /* ---Common Section Layouts & Containers ---*/
+   
+.content-section,
+.services,
+.gallery,
+.about,
+.contact,
+.profile-page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.journey-card,
+.card,
+.gallery-box,
+.form-card,
+.auth-card,
+.about-main-block,
+.about-side-block,
+.skills-block,
+.about-project-block,
+.profile-panel {
+    padding: 24px;
+    border: 1px solid #d9e2ec;
+    border-radius: 10px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.section-title h2 {
+    font-size: 25px;
+}
+
+.section-title a {
+    color: #1677d2;
+    font-weight: bold;
+}
+
+   /* ---Journey / Route Planning Section--- */
+.journey-section {
+    max-width: 1100px;
+    margin: 38px auto 0;
+    padding: 0 20px;
+}
+
+.journey-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.journey-heading h2 {
+    font-size: 25px;
+}
+
+.route-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.route-input {
+    flex: 2;
+    min-width: 180px;
+}
+
+.route-input.route-mode {
+    flex: 1;
+    min-width: 140px;
+    max-width: 180px;
+}
+
+.route-input label,
+.field label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.route-input input,
+.route-input select,
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #0e1215;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.swap-btn {
+    padding: 9px 12px;
+    border: 1px solid #d9e2ec;
+    border-radius: 5px;
+    background: white;
+    color: #1677d2;
+    cursor: pointer;
+}
+
+.form-message {
+    margin-top: 10px;
+    min-height: 18px;
+    font-size: 14px;
+}
+
+   /*--- Services & Transport Section--- */
+.transport-grid,
+.service-container,
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.transport-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.transport-card {
+    overflow: hidden;
+    border: 1px solid #d9e2ec;
+    border-radius: 10px;
+}
+
+.transport-card img {
+    width: 100%;
+    height: 180px;
+    display: block;
+    object-fit: cover;
+}
+
+.transport-card div {
+    padding: 15px;
+}
+
+.transport-card h3,
+.card h2 {
+    margin-bottom: 6px;
+}
+
+.transport-card p,
+.card p,
+.app-banner p {
+    color: #627d98;
+}
+
+ 
+   /*--- Gallery Section--- */
+.gallery-box img {
+    width: 100%;
+    height: 180px;
+    display: block;
+    object-fit: cover;
+}
+ 
+   /* ---Information / Features Section--- */
+.info-section {
+    padding: 60px 10%;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+    color: #e91e63;
+}
+
+.info-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+   /*--- Icons--- */
+.icon {
+    float: right;
+    font-size: 22px;
+    color: #1677d2;
+}
+
+.card .icon {
+    float: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.info-card .icon {
+    float: none;
+    display: inline-block;
+    margin-right: 6px;
+    color: #e91e63;
+}
+
+.detail-row .icon {
+    float: none;
+    font-size: 21px;
+    color: #1677d2;
+}
+
+
+   /* ---App Banner Section--- */
+.app-banner {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    max-width: none;
+    padding: 45px 10%;
+    background: #edf7ff;
+}
+
+.app-banner div {
+    max-width: 550px;
+}
+
+.app-banner h2 {
+    margin-bottom: 10px;
+}
+
+.app-banner p {
+    margin-bottom: 18px;
+}
+
+.app-banner img {
+    width: 40%;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+   /* ---About Section--- */ 
+.about-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 20px;
+}
+
+.about-main-block p,
+.about-side-block p,
+.about-project-block p {
+    margin-top: 10px;
+    color: #627d98;
+}
+
+.about-side-block,
+.about-project-block {
+    background: #edf7ff;
+}
+
+.skills-block {
+    background: #102a43;
+    color: white;
+}
+
+.detail-row {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #d9e2ec;
+}
+
+.detail-row:last-child {
+    border: 0;
+}
+
+.detail-row p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.skill-list span {
+    padding: 7px 10px;
+    border-radius: 5px;
+    background: white;
+    color: #102a43;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ---Contact Section ---*/ 
+.contact {
+    max-width: 600px;
+}
+
+.rsrtc-contact {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.rsrtc-details,
+.rsrtc-image-card {
+    padding: 26px;
+    border: 1px solid #d9e2ec;
+    border-radius: 10px;
+}
+
+.rsrtc-details>p {
+    margin: 8px 0 20px;
+    color: #627d98;
+}
+
+.contact-detail {
+    display: grid;
+    gap: 3px;
+    padding: 12px 0;
+    border-top: 1px solid #d9e2ec;
+}
+
+.contact-detail strong {
+    color: #102a43;
+}
+
+.contact-detail a {
+    color: #1677d2;
+}
+
+.contact-detail span {
+    color: #627d98;
+}
+
+.rsrtc-details .btn {
+    margin-top: 20px;
+}
+
+.rsrtc-image-card {
+    background: #edf7ff;
+}
+
+.rsrtc-image-card img {
+    width: 100%;
+    height: 280px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.rsrtc-image-card p {
+    margin-top: 10px;
+    color: #627d98;
+    text-align: center;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.form-card .btn,
+.auth-card .btn {
+    width: 100%;
+}
+
+   /* ---Authentication (Login & Register) Section--- */
+.auth-page {
+    display: grid;
+    min-height: calc(100vh - 150px);
+    place-items: center;
+    padding: 40px 20px;
+}
+
+.auth-card {
+    width: min(100%, 430px);
+}
+
+.auth-card>p {
+    margin: 7px 0 20px;
+    color: #627d98;
+}
+
+.auth-switch {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.auth-switch a {
+    color: #1677d2;
+    font-weight: bold;
+}
+ 
+   /* ----User Profile Section ----*/
+ 
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px;
+    border-radius: 10px;
+    background: #edf7ff;
+}
+
+.profile-header p {
+    color: #627d98;
+}
+
+.avatar {
+    display: grid;
+    width: 65px;
+    height: 65px;
+    place-items: center;
+    border-radius: 50%;
+    background: #1677d2;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile-panel h2 {
+    margin-bottom: 12px;
+}
+
+.saved-route {
+    display: flex;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #d9e2ec;
+}
+
+.saved-route span {
+    color: #627d98;
+    font-size: 13px;
+}
+
+.route-circle {
+    color: #1677d2 !important;
+}
+
+.empty-bookings {
+    color: #627d98;
+}
+
+   /*------ Footer Section -------*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 7%;
+    background: #102a43;
+    color: #cbd8e6;
+    font-size: 13px;
+}
+
+footer .logo {
+    color: white;
+}
+
+/*---- Responsive Design / Media Queries----- */
+@media (max-width: 1024px) {
+
+    .transport-grid,
+    .service-container,
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-layout,
+    .rsrtc-contact,
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 14px 5%;
+    }
+
+    .navbar .logo {
+        font-size: 26px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-actions {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .page-heading {
+        padding: 30px 15px;
+    }
+
+    .content-section,
+    .services,
+    .gallery,
+    .about,
+    .contact,
+    .profile-page {
+        padding: 30px 15px;
+    }
+
+    .journey-card,
+    .auth-card,
+    .rsrtc-details,
+    .rsrtc-image-card,
+    .about-main-block,
+    .about-side-block,
+    .about-project-block,
+    .card,
+    .gallery-box,
+    .profile-panel {
+        padding: 20px;
+    }
+
+    .route-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .section-title,
+    .journey-heading,
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-title a {
+        margin-top: 10px;
+    }
+
+    .app-banner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 30px 8%;
+    }
+
+    .app-banner img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar .logo {
+        font-size: 24px;
+    }
+
+    .navbar {
+        padding: 14px 4%;
+    }
+
+    .info-section {
+        padding: 40px 8%;
+    }
+
+    .about-layout {
+        gap: 15px;
+    }
+
+    .transport-grid,
+    .service-container,
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-actions .login-link {
+        display: none;
+    }
+
+    .transport-grid,
+    .service-container,
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .route-input {
+        min-width: 100%;
+    }
+
+    .swap-btn {
+        margin: auto;
+    }
+
+    .page-heading h1 {
+        font-size: 27px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

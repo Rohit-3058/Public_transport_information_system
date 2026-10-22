@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Pinkcity.Go</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar"><a class="logo" href="index.html"><span>Pinkcity</span>.Go</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions"></div>
+    </nav>
+    <main class="auth-page">
+        <section class="auth-card">
+            <h1>Create your account</h1>
+            <p>Save routes and make daily travel more convenient.</p>
+            <form id="registerForm" class="simple-form">
+                <div class="field"><label for="full-name">Full name</label><input id="full-name" type="text"
+                        placeholder="Enter your name" required></div>
+                <div class="field"><label for="register-email">Email address</label><input id="register-email"
+                        type="email" placeholder="you@example.com" required></div>
+                <div class="field"><label for="register-password">Password</label><input id="register-password"
+                        type="password" placeholder="Create a password" required></div><button class="btn"
+                    type="submit">Create account</button>
+                <p class="form-message"></p>
+            </form>
+            <p class="auth-switch">Already have an account? <a href="login.html">Login here</a></p>
+        </section>
+    </main>
+    <footer>
+        <div><a class="logo" href="index.html"><span style="font-size: 20px;" >Pinkcity.Go</span></a>
+            <p>Simple public transport information for everyone.</p>
+        </div>
+        <p>© 2026 Pinkcity.Go. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

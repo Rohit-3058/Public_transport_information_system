@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Pinkcity.Go</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="profile-view">
+    <nav class="navbar"><a class="logo" href="index.html"><span>Pinkcity</span>.Go</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions"></div>
+    </nav>
+    <main class="profile-page">
+        <section class="profile-header">
+            <div id="profile-avatar" class="avatar"></div>
+            <div>
+                <h1 id="profile-display-name"></h1>
+                <p id="profile-display-email"></p>
+            </div>
+        </section>
+        <div class="profile-grid">
+            <section class="profile-panel">
+                <h2>Saved bus bookings</h2>
+                <div id="bookingsList"></div>
+            </section>
+            <section class="profile-panel">
+                <h2>Account details</h2>
+                <form id="profileForm" class="simple-form">
+                    <div class="field"><label for="profile-name">Name</label><input id="profile-name" required></div>
+                    <div class="field"><label for="profile-email">Email</label><input id="profile-email" type="email"
+                            required></div><button class="btn" type="submit">Save changes</button>
+                    <p class="form-message"></p>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div><a class="logo" href="index.html"><span style="font-size: 20px;">Pinkcity.Go</span></a>
+            <p>Simple public transport information for everyone.</p>
+        </div>
+        <p>© 2026 Pinkcity.Go. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
